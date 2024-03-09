@@ -1,4 +1,0 @@
-colorama>=0.4.6
-sentry_sdk
-aiofiles
-ujson

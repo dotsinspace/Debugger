@@ -1,0 +1,11 @@
+README.md
+__init__.py
+pyproject.toml
+.github/workflows/python-publish.yml
+__pycache__/__init__.cpython-39.pyc
+src/__init__.py
+src/debugger.egg-info/PKG-INFO
+src/debugger.egg-info/SOURCES.txt
+src/debugger.egg-info/dependency_links.txt
+src/debugger.egg-info/requires.txt
+src/debugger.egg-info/top_level.txt

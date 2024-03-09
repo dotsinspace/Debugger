@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: debugger
+Version: 1.0.0
+Summary: Simple colorful debugger for logging.
+Author-email: dotsinspace <dotsinspace@gmail.com>
+Project-URL: Homepage, https://github.com/dotsinspace/Debugger
+Keywords: utility
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: sentry_sdk
+Requires-Dist: aiofiles
+Requires-Dist: ujson

@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dotsinspace/debugger"
+version = "1.0.0"
+description = "Simple colorful debugger for logging."
+readme = "README.md"
+authors = [{ name = "dotsinspace", email = "dotsinspace@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+keywords = ["utility"]
+dependencies = [
+    "colorama >= 0.4.6",
+    "sentry_sdk",
+    'aiofiles',
+    'ujson',
+    'logging'
+]
+requires-python = "3.9"
+
+[project.urls]
+Homepage = ""

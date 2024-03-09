@@ -1,0 +1,2 @@
+[console_scripts]
+debugger = debugger:__init__.py

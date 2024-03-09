@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-DOTSINSPACE.DEBUGGER.egg-info/PKG-INFO
-DOTSINSPACE.DEBUGGER.egg-info/SOURCES.txt
-DOTSINSPACE.DEBUGGER.egg-info/dependency_links.txt
-DOTSINSPACE.DEBUGGER.egg-info/entry_points.txt
-DOTSINSPACE.DEBUGGER.egg-info/requires.txt
-DOTSINSPACE.DEBUGGER.egg-info/top_level.txt
-debugger/__init__.py

@@ -1,2 +1,0 @@
-[console_scripts]
-sample = debugger:__init__.py

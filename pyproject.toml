@@ -1,28 +1,51 @@
 [build-system]
-requires      = ["setuptools", "setuptools_scm", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-[project]
-name = "dotsinspace_debugger"
-version = "1.0.0"
-description = "Simple colorful debugger for logging."
-readme = "README.md"
-authors = [{ name = "dotsinspace", email = "dotsinspace@gmail.com" }]
-license = { file = "LICENSE" }
+[tool.poetry]
+name = "debugger"
+version = "0.1.0"
+description = "Your package description"
+authors = ["Your Name"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+your-script = "your_package_name.module:main_function"
+
+[tool.poetry.extras]
+# Define any additional dependencies for extras here
+
+[tool.poetry.publish]
+# Optional: PyPI repository URL
+repository = "https://upload.pypi.org/legacy/"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[metadata]
+name = "debugger"
+version = "0.0.1"
+author = "dotsinspace"
+description = "Library to print colorful debugs to console"
+license = "MIT"
+url = "https://github.com/your-username/your-package"
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9"
 ]
-keywords = ["utility"]
-dependencies = [
-    "colorama >= 0.4.6",
-    "sentry_sdk",
-    'aiofiles',
-    'ujson'
-]
-
-[project.urls]
-Homepage = "https://github.com/dotsinspace/Debugger"
-
-[tool.setuptools_scm]
+keywords = ["utility", "debugger"]

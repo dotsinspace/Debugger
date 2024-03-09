@@ -1,30 +1,32 @@
 # pyproject.toml
 
 [build-system]
-requires      = ["setuptools", "setuptools_scm", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0,<2.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-[project]
+[tool.poetry]
 name = "debugger"
 version = "1.0.0"
 description = "Simple colorful debugger for logging."
 readme = "README.md"
-authors = [{ name = "dotsinspace", email = "dotsinspace@gmail.com" }]
-license = { file = "LICENSE" }
+authors = ["dotsinspace <dotsinspace@gmail.com>"]
+license = "MIT"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9"
+    "Programming Language :: Python :: 3.9",
 ]
 keywords = ["utility"]
-dependencies = [
-    "colorama >= 0.4.6",
-    "sentry_sdk",
-    'aiofiles',
-    'ujson'
-]
 
-[project.urls]
-Homepage = "https://github.com/dotsinspace/Debugger"
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = ">=0.4.6"
+sentry_sdk = "*"
+aiofiles = "*"
+ujson = "*"
 
-[tool.setuptools_scm]
+[tool.poetry.scripts]
+debugger = 'debugger:__init__'
+
+[tool.poetry.urls]
+homepage = "https://github.com/dotsinspace/Debugger"

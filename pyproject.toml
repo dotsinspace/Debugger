@@ -3,7 +3,7 @@ requires      = ["setuptools", "setuptools_scm", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "debugger"
+name = "dotsinspace_debugger"
 version = "1.0.0"
 description = "Simple colorful debugger for logging."
 readme = "README.md"

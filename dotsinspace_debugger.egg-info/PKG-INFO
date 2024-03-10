@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dotsinspace-debugger
-Version: 1.0.0
+Version: 1.0.2
 Summary: Debugger for colorful logging.
 Home-page: https://github.com/dotsinspace/Debugger
 Author: dotsinspace
@@ -14,7 +14,6 @@ Project-URL: Funding, https://donate.pypi.org
 Project-URL: Say Thanks!, http://saythanks.io/dotsinspace
 Project-URL: Source, https://github.com/dotsinspace/Debugger
 Keywords: utility,debugger
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9

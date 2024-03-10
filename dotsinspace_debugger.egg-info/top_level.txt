@@ -1,1 +1,1 @@
-debugger
+dotsinspace_debugger

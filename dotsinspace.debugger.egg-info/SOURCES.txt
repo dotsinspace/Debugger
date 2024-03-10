@@ -6,6 +6,5 @@ debugger/__init__.py
 dotsinspace.debugger.egg-info/PKG-INFO
 dotsinspace.debugger.egg-info/SOURCES.txt
 dotsinspace.debugger.egg-info/dependency_links.txt
-dotsinspace.debugger.egg-info/entry_points.txt
 dotsinspace.debugger.egg-info/requires.txt
 dotsinspace.debugger.egg-info/top_level.txt

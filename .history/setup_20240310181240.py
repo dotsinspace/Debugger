@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="dotsinspace_debugger",
-    version="1.0.6",
+    version="1.0.5",
     description="Debugger for colorful logging.",
     long_description="README.md",
     author="dotsinspace",

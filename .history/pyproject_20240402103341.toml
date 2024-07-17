@@ -68,7 +68,7 @@ maintainers = [
 ]
 
 # license = "MIT"
-license = 'MIT License'
+license 
 
 # Classifiers help users find your project by categorizing it.
 #

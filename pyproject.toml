@@ -67,9 +67,6 @@ maintainers = [
     {name = "dotsinspace", email = "dotsinspace@gmail.com" }
 ]
 
-# license = "MIT"
-license = 'MIT License'
-
 # Classifiers help users find your project by categorizing it.
 #
 # For a list of valid classifiers, see https://pypi.org/classifiers/

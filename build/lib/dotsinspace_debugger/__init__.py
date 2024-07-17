@@ -31,6 +31,7 @@ errorOrWarningOrInfoMaps = {
 def Debugger(name):
     # Check if logger already exists
     if name in logging.Logger.manager.loggerDict:
+        # Return logger.
         return logging.getLogger(name)
 
     # Variable assignment.
@@ -53,17 +54,34 @@ def Debugger(name):
         Fore.LIGHTCYAN_EX,
         Fore.LIGHTWHITE_EX
     ]
+    
+    # Function to replace last occurrence of a string.
+    def rreplace(s, old, new, occurrence):
+        # Variable assignment.
+        li = s.rsplit(old, occurrence)
+        
+        # Return new join.
+        return new.join(li)
+    
+    # Update name.
+    name = rreplace(name.replace('->', ':'), ':', '->', 1)
 
     # Logger for handling errors.
     logger = logging.getLogger(name)
+    
+    # Set the log level
     logger.setLevel(logging.DEBUG)
 
     # Create a console handler and set the log level
     ch = logging.StreamHandler()
+    
+    # Set the log level
     ch.setLevel(logging.DEBUG)
 
     # Use the function name to get the corresponding color, or assign a new random color if not found
     function_color = executionColors.get(name)
+    
+    # Check if function color is not defined then assign random color.
     if function_color is None:
         function_color = random.choice(colors)
         executionColors[name] = function_color
@@ -84,9 +102,16 @@ def Debugger(name):
 
     # Add the handler to the logger
     logger.addHandler(ch)
-
-    # Set formatter for the root logger
-    logging.getLogger().handlers[0].setFormatter(formatter)
+    
+    # Make sure that handlers have the formatter.
+    for handler in logging.getLogger().handlers:
+        # If handler has formatter then skip it.
+        if handler.formatter:
+            # Skip given loop.
+            continue
+        
+        # Add formatter to handler.
+        handler.setFormatter(formatter)
 
     # Return logger.
     return logger
